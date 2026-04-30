@@ -7,7 +7,7 @@ Represents a boolean, encoded in one byte.
 
 Example of value: `true` / `false`
 
-### **cstring** ( )
+### **cstring** ({ ?encoding: String })
 Arguments: encoding
 
 Represents a null terminated string. Similar to strings in C.
