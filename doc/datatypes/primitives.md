@@ -1,6 +1,6 @@
 ## Primitives
 
-### **bool** ( )
+### **bool** ()
 Arguments: None
 
 Represents a boolean, encoded in one byte.
@@ -23,7 +23,7 @@ Example: A string length prefixed by a varint.
 
 Example of value: `"my string"`
 
-### **void** ( )
+### **void** ()
 Arguments: None
 
 Represents an empty value.
