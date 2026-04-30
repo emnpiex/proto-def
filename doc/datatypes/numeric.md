@@ -38,6 +38,15 @@ Example:
 ```
 Example of value: `65535` (size = 2) / `16777215` (size = 3)
 
+Example:
+```json
+[
+  "int",
+  { "size": "1", "minimum": 1, "maximum": 100 }
+]
+```
+Example of value: `1`, `100` (does not match `0` or `101`)
+
 ### **varint**  ({ ?minimum: Integer, ?maximum: Integer })
 Arguments: None
 
