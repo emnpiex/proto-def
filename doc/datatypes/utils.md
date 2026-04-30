@@ -73,7 +73,7 @@ Example of value: `"int"`
 Arguments:
 * type : The underlying integer type (eg varint, lu32).
 * flags : Either an array of flag values from LSB to MSB, or an object containing a mappng of valueName => bitMask.
-* big : 64+ bits. In languages like javascript (where all numbers are 64-bit floating points), special data types may have to be used for integers greater than 32 bits, so this must be set to true if the `type` is using the special data type.
+* big : If the type is 64+ bits. In languages like javascript (where all numbers are 64-bit floating points), special data types may have to be used for integers greater than 32 bits, so this must be set to true if the `type` is using the special data type.
 * shift : Specify if flags is an object and holds bit positions as values opposed to a bitmask.
 
 Represents boolean flags packed into an integer. Similar to bitfields, but only intended for enumerated boolean flags (each flag occupies 1 bit), and supports arbitrary underlying integer types.
