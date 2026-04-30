@@ -109,7 +109,7 @@ or
 Example of value to pass when writing: `{"flags": { "onGround": true, "inAir": false } }`. Likewise when reading you will get a similar object back, with a extra `_value` field holding the raw integer.
 
 
-### **pstring** ({ countType: Type, ?count: Countable })
+### **pstring** ({ countType: Type, ?count: Countable, ?encoding: string })
 Arguments:
 * countType : the type of the length prefix
 * count : optional (either count or countType), a reference to the field counting the elements, or a fixed size (an integer)
