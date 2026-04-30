@@ -8,7 +8,8 @@ Arguments:
 
 Represents a raw bytes with count prefix/field or without it.
 
-Example: An buffer prefixed by a varint length.
+Example:
+An buffer prefixed by a varint length.
 ```json
 [
     "buffer",
@@ -29,7 +30,6 @@ Represents a list of value with sizes that are not a multiple of 8bits.
 The sum of the sizes must be a multiple of 8.
 
 Example:
-
 3 values, x, y and z with sizes in bits : 26, 12, 26. Notice that 26+12+26=64.
 ```json
 [
@@ -52,7 +52,6 @@ Arguments:
 Maps string to a values.
 
 Example:
-
 Maps a byte to a string, 1 to "byte", 2 to "short", 3 to "int", 4 to "long".
 ```json
 [
@@ -80,7 +79,6 @@ Arguments:
 Represents boolean flags packed into an integer. Similar to bitfields, but only intended for enumerated boolean flags (each flag occupies 1 bit), and supports arbitrary underlying integer types.
 
 Example:
-
 ```json
 [
   "bitflags",
@@ -119,7 +117,8 @@ Arguments:
 
 Represents a string.
 
-Example: A string length prefixed by a varint.
+Example:
+A string length prefixed by a varint.
 ```json
 [
   "pstring", { "countType": "varint", "encoding": "utf-8" }
