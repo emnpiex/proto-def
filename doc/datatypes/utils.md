@@ -92,19 +92,21 @@ Example:
 ```
 
 or 
-```yaml
+```json
 [
   "bitflags",
   {
     "type": "lu32",
     "big": true,
     "flags": {
-      "onGround": 0b1,
-      "inAir": 0b10
+      "onGround": 1,
+      "inAir": 2
     }
   }
 ]
 ```
+
+where `1` and `2` respectively are the JSON-compatible, decimal representations of the bitmasks `0b01` and `0b10`.
 
 Example of value to pass when writing: `{"flags": { "onGround": true, "inAir": false } }`. Likewise when reading you will get a similar object back, with a extra `_value` field holding the raw integer.
 
