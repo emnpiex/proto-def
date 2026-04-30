@@ -70,7 +70,7 @@ Maps a byte to a string, 1 to "byte", 2 to "short", 3 to "int", 4 to "long".
 ```
 Example of value: `"int"`
 
-### **bitflags** ([ { type: string, flags: object | array, big?: boolean, shift?: number } ])
+### **bitflags** ([ { type: string, flags: object | array, ?big: boolean, ?shift: number } ])
 Arguments:
 * type : The underlying integer type (eg varint, lu32).
 * flags : Either an array of flag values from LSB to MSB, or an object containing a mappng of valueName => bitMask.
