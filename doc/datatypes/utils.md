@@ -104,7 +104,23 @@ or
 ]
 ```
 
-where `1` and `2` respectively are the JSON-compatible, decimal representations of the bitmasks `0b01` and `0b10`.
+(where `1` and `2` respectively are the JSON-compatible, decimal representations of the bitmasks `0b01` and `0b10`)
+
+or 
+```json
+[
+  "bitflags",
+  {
+    "type": "lu32",
+    "big": true,
+    "shift": true,
+    "flags": {
+      "onGround": 0,
+      "inAir": 1
+    }
+  }
+]
+```
 
 Example of value to pass when writing: `{"flags": { "onGround": true, "inAir": false } }`. Likewise when reading you will get a similar object back, with a extra `_value` field holding the raw integer.
 
