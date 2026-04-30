@@ -115,7 +115,7 @@ Example of value to pass when writing: `{"flags": { "onGround": true, "inAir": f
 Arguments:
 * countType : the type of the length prefix
 * count : optional (either count or countType), a reference to the field counting the elements, or a fixed size (an integer)
-* encoding: the encoding of the string, UTF-8 by default
+* encoding : the encoding of the string, UTF-8 by default
 
 Represents a string.
 
