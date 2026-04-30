@@ -69,12 +69,12 @@ Maps a byte to a string, 1 to "byte", 2 to "short", 3 to "int", 4 to "long".
 ```
 Example of value: `"int"`
 
-### **bitflags** ([ { type: String, flags: Object | Array, ?big: Boolean, ?shift: Number } ])
+### **bitflags** ([ { type: String, flags: Object | Array, ?big: Boolean, ?shift: Boolean } ])
 Arguments:
 * type : The underlying integer type (eg varint, lu32).
 * flags : Either an array of flag values from LSB to MSB, or an object containing a mappng of valueName => bitMask.
 * big : If the type is 64+ bits. In languages like javascript (where all numbers are 64-bit floating points), special data types may have to be used for integers greater than 32 bits, so this must be set to true if the `type` is using the special data type.
-* shift : Specify if flags is an object and holds bit positions as values opposed to a bitmask.
+* shift : Specify if flags is an object and holds bit positions as values opposed to a bitmask, false by default.
 
 Represents boolean flags packed into an integer. Similar to bitfields, but only intended for enumerated boolean flags (each flag occupies 1 bit), and supports arbitrary underlying integer types.
 
