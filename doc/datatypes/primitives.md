@@ -10,7 +10,7 @@ Example of value: `true` / `false`
 ### **cstring** ({ ?encoding: String })
 Arguments: encoding
 
-Represents a null terminated string. Similar to strings in C.
+Represents a null-terminated string. Similar to strings in C.
 Assumes UTF-8 encoding by default
 
 Example:
