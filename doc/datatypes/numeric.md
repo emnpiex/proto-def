@@ -52,6 +52,33 @@ Arguments: None
 
 [Protobuf](https://developers.google.com/protocol-buffers/docs/encoding#varints)-compatible representation for variable-length integers using one or more bytes. Intended for 32-bit unsigned integers, or signed 32-bit integers that have been directly cast to an integer (where the MSB is the sign bit) before encoding.
 
+Example:
+```json
+"varint"
+```
+
+or
+```json
+[
+  "varint"
+]
+```
+
+or
+```json
+[
+  "varint",
+  {}
+]
+```
+
+or
+```json
+[
+  "varint",
+  { "minimum": 1, "maximum": 100 }
+]
+```
 Example of value: `300` (size is 2 bytes)
 
 ### **varint64**  ({ ?minimum: Integer, ?maximum: Integer })
