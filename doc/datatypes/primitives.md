@@ -14,7 +14,7 @@ Represents a null terminated string. Similar to strings in C.
 Assumes UTF-8 encoding by default
 
 Example:
-Example: A string length prefixed by a varint.
+A UTF-16 string of unknown size that is expected to end with the zero character (null-terminal).
 ```json
 [
   "cstring", { "encoding": "utf-16" }
