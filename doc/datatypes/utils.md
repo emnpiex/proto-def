@@ -70,7 +70,7 @@ Maps a byte to a string, 1 to "byte", 2 to "short", 3 to "int", 4 to "long".
 ```
 Example of value: `"int"`
 
-### **bitflags** ([ { type: string, flags: object | array, ?big: boolean, ?shift: number } ])
+### **bitflags** ([ { type: String, flags: Object | Array, ?big: Boolean, ?shift: Number } ])
 Arguments:
 * type : The underlying integer type (eg varint, lu32).
 * flags : Either an array of flag values from LSB to MSB, or an object containing a mappng of valueName => bitMask.
@@ -111,7 +111,7 @@ where `1` and `2` respectively are the JSON-compatible, decimal representations 
 Example of value to pass when writing: `{"flags": { "onGround": true, "inAir": false } }`. Likewise when reading you will get a similar object back, with a extra `_value` field holding the raw integer.
 
 
-### **pstring** ({ countType: Type, ?count: Countable, ?encoding: string })
+### **pstring** ({ countType: Type, ?count: Countable, ?encoding: String })
 Arguments:
 * countType : the type of the length prefix
 * count : optional (either count or countType), a reference to the field counting the elements, or a fixed size (an integer)

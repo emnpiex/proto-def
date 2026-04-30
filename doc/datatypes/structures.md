@@ -20,7 +20,7 @@ Example: An array of int prefixed by a short length.
 ```
 Example of value: `[1, 2, 3, 4]` (type = [i8](./numeric.md)) / `["ac", "dc"]` (type = [cstring](./utils.md))
 
-### **container** ([ { name: String, type: Type, ?anon: Bool }, ... ])
+### **container** ([ { name: String, type: Type, ?anon: Boolean }, ... ])
 Arguments: 
 * [array] : a field
 * * name : the name of field
