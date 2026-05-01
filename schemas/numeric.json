@@ -107,18 +107,14 @@
         "enum": ["int"]
       },
       {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "size": {
-              "type": "number"
-            }
-          },
-          "required": ["size"],
-          "additionalProperties": false
+        "type": "object",
+        "properties": {
+          "size": {
+            "type": "number"
+          }
         },
-        "additionalItems": false
+        "required": ["size"],
+        "additionalProperties": false
       }
     ],
     "additionalItems": false
@@ -131,18 +127,14 @@
         "enum": ["lint"]
       },
       {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "size": {
-              "type": "number"
-            }
-          },
-          "required": ["size"],
-          "additionalProperties": false
+        "type": "object",
+        "properties": {
+          "size": {
+            "type": "number"
+          }
         },
-        "additionalItems": false
+        "required": ["size"],
+        "additionalProperties": false
       }
     ],
     "additionalItems": false
